@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    perspective: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+#board {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.4"/></svg>'), linear-gradient(#d2b48c, #c19a6b);
+    background-size: 200px 200px, cover;
+    transform-origin: 0 0;
+}
+
+.note {
+    position: absolute;
+    background-color: #fff9c4;
+    padding: 10px;
+    border: 1px solid #ffd54f;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    cursor: move;
+    min-width: 100px;
+    min-height: 50px;
+    z-index: 10;
+    transition: transform 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.note:hover {
+    transform: scale(1.02);
+}
+
+.note p {
+    cursor: text;
+}
+
+.pin {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f44336;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#addNoteBtn, #connectBtn, #toggleParallaxBtn {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#addNoteBtn { right: 20px; }
+#connectBtn { right: 180px; }
+#toggleParallaxBtn { right: 340px; }
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    pointer-events: none;
+}
