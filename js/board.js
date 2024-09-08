@@ -15,6 +15,7 @@ class Board {
         this.isDragging = false;
         this.lastMouseX = 0;
         this.lastMouseY = 0;
+        this.draggedElement = null;
 
         this.setupEventListeners();
     }
@@ -23,7 +24,7 @@ class Board {
         this.element.addEventListener('wheel', this.handleWheel.bind(this));
         this.element.addEventListener('mousedown', this.handleMouseDown.bind(this));
         document.addEventListener('mousemove', this.handleMouseMove.bind(this));
-        document.addEventListener('mouseup', () => this.isDragging = false);
+        document.addEventListener('mouseup', this.handleMouseUp.bind(this));
         document.addEventListener('contextmenu', (e) => e.preventDefault());
         window.addEventListener('resize', this.handleResize.bind(this));
     }
@@ -73,6 +74,13 @@ class Board {
             this.lastMouseX = e.clientX;
             this.lastMouseY = e.clientY;
         }
+    }
+
+    static handleMouseUp(e) {
+        if (this.draggedElement) {
+            this.draggedElement = null;
+        }
+        this.isDragging = false;
     }
 
     static handleWheel(e) {
