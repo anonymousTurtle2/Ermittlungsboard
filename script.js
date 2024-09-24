@@ -83,8 +83,8 @@ function updateRectangles() {
         ];
 
         const rectangle = L.rectangle(pixelBounds, {
-            color: 'rgba(0,0,0,0)',
-            fillColor: 'rgba(255,255,255,0.1)',
+            color: 'rgba(255,0,0,1)',
+            fillColor: 'rgba(255,0,0,1)',
             weight: 1
         }).addTo(map);
 
@@ -125,13 +125,13 @@ function updateRectangles() {
 
         rectangle.on('mouseover', function (e) {
             this.setStyle({
-                fillColor: 'rgba(255,255,255,0.3)'
+                fillColor: 'rgba(255,0,0,1)'
             });
         });
 
         rectangle.on('mouseout', function (e) {
             this.setStyle({
-                fillColor: 'rgba(255,255,255,0.1)'
+                fillColor: 'rgba(255,0,0,1)'
             });
         });
     });
