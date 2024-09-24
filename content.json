@@ -1,12 +1,11 @@
 {
   "compact": {
     "title": "Compact",
-    "content": "<h3>Informationen über Gruppe A</h3><p>Dies WAR ein längerer Text über Gruppe A. Er kann HTML-Formatierungen enthalten.</p><ul><li>Punkt 1</li><li>Punkt 2</li></ul>"
+    "content": "<li>Die Compact-Magazin GmbH gibt seit 2010 das rechtsextreme Compact-Magazin heraus und ist in Falkensee, Brandenburg, ansässig.</li><li>In Brandenburg unterhält Compact Verbindungen zur asylfeindlichen Initiative &quotZukunft Heimat&quot.</li><li>Das Landesamt für Verfassungsschutz Brandenburg stufte Compact im Dezember 2021 als &quotgesichert rechtsextrem&quot ein.</li>"
   },
   "einprozent": {
     "title": "Ein Prozent",
-    "content": "<h3>Informationen über Gruppe B</h3><p>Hier steht der Text für Gruppe B. Auch dieser kann formatiert sein.</p>"
-  },
+    "content": "<li>Ein Prozent ist eine bundesweite Vernetzungsagentur der Neuen Rechten</li><li>Vom Verfassungsschutz als rechtsextrem eingestuft</li><li>Gegründet Ende 2015</li><li>Selbstbezeichnung als &quotWiderstandsplattform&quot</li><li>Sammelt Spendengelder durch Crowdfunding</li><li>Unterstützt rechtsextreme Initiativen und Kampagnen</li><li>Finanziert flüchtlingsfeindliche Proteste und &quotWahlbeobachtungen&quot</li><li>Arbeitet mit lokalen rechtsextremen Gruppen zusammen</li><li><a href='https://aktionsbuendnis-brandenburg.de/ein-prozent/' target='_blank'>Weitere Informationen findest du hier.</a></li>"},
   "destiftung": {
     "title": "Desiderius-Erasmus Stiftung",
     "content": "<h3>Informationen über Gruppe B</h3><p>Hier steht der Text für Gruppe B. Auch dieser kann formatiert sein.</p>"

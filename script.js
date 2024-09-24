@@ -125,13 +125,13 @@ function updateRectangles() {
 
         rectangle.on('mouseover', function (e) {
             this.setStyle({
-                fillColor: 'rgba(255,255,255,0.1)'
+                fillColor: 'rgba(255,255,255,0.3)'
             });
         });
 
         rectangle.on('mouseout', function (e) {
             this.setStyle({
-                fillColor: 'rgba(255,255,255,0.3)'
+                fillColor: 'rgba(255,255,255,0.1)'
             });
         });
     });
