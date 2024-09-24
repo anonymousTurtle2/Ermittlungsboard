@@ -1,10 +1,14 @@
 {
-  "gruppeA": {
-    "title": "Gruppe A",
-    "content": "<h3>Informationen über Gruppe A</h3><p>Dies ist ein längerer Text über Gruppe A. Er kann HTML-Formatierungen enthalten.</p><ul><li>Punkt 1</li><li>Punkt 2</li></ul>"
+  "compact": {
+    "title": "Compact",
+    "content": "<h3>Informationen über Gruppe A</h3><p>Dies WAR ein längerer Text über Gruppe A. Er kann HTML-Formatierungen enthalten.</p><ul><li>Punkt 1</li><li>Punkt 2</li></ul>"
   },
-  "gruppeB": {
-    "title": "Gruppe B",
+  "einprozent": {
+    "title": "Ein Prozent",
+    "content": "<h3>Informationen über Gruppe B</h3><p>Hier steht der Text für Gruppe B. Auch dieser kann formatiert sein.</p>"
+  },
+  "destiftung": {
+    "title": "Desiderius-Erasmus Stiftung",
     "content": "<h3>Informationen über Gruppe B</h3><p>Hier steht der Text für Gruppe B. Auch dieser kann formatiert sein.</p>"
   }
 }

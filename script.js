@@ -43,14 +43,19 @@ img.onload = function() {
         .then(data => {
             clickableAreas = [
                 {
-                    bounds: [[0.715, 0.305], [0.76, 0.34]],
-                    title: data.gruppeA.title,
-                    content: data.gruppeA.content
+                    bounds: [[0.73, 0.263], [0.78, 0.303]],
+                    title: data.compact.title,
+                    content: data.compact.content
                 },
                 {
-                    bounds: [[0.4, 0.8], [0.5, 0.9]],
-                    title: data.gruppeB.title,
-                    content: data.gruppeB.content
+                    bounds: [[0.745, 0.385], [0.8, 0.425]],
+                    title: data.einprozent.title,
+                    content: data.einprozent.content
+                },
+                {
+                    bounds: [[0.65, 0.335], [0.7, 0.375]],
+                    title: data.destiftung.title,
+                    content: data.destiftung.content
                 }
             ];
             updateRectangles();
